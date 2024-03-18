@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-fill"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+
+    <div class="blog__header"></div>
+
+    <section class="container">
+        <div class="blog__details">
+            <a href="index.html" class="back__to-home text-xs">
+                <i class="ri-arrow-left-line"> Voltar</i>
+            </a>
+
+            <h3 class="post__details-title">Como organizar meu codigo</h3>
+            <p class="post__details-date text-sm">Março, 13, 2024</p>
+            <p class="post__details text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum accusantium, blanditiis harum error nemo minus accusamus ea nisi iste deserunt delectus explicabo exercitationem maiores magnam quae vel voluptatibus mollitia?</p>
+            <p class="post__details text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus est tempora, dolorum autem ipsum quibusdam, ullam sequi incidunt impedit fugit corporis fuga? Assumenda dicta ab tenetur aut sunt ducimus sint.</p>
+            <figure>
+                <img src="img/mago.jpg" alt="">
+                <figcaption class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, provident? Sed rem, porro voluptatibus unde voluptate labore facere sunt fuga.
+                </figcaption>
+            </figure>
+
+            <p class="post__details text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur eos consequatur! Veritatis, cupiditate sit! Soluta cum consequatur natus fuga.</p>
+
+            <p class="post__social-share">
+                <span class="post__share text-lg">Compartilhe esta postagem:</span>
+
+                <div class="post__social-links">
+                    <a href="" class="post__share-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+
+                    <a href="" class="post__share-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </p>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="contact__content container">
+            <h2 class="section__title">Entre em contato_</h2>
+
+            <div class="contact__container grid">
+                <div class="contact__info">
+                    <dl class="contact__list">
+                        <dt>Celular:</dt>
+                        <dd>(82) 998279686</dd>
+                        <dt>Discord:</dt>
+                        <dd>magaow</dd>
+                        <dt>Email:</dt>
+                        <dd>Ylan_vinicio@hotmail.com</dd>
+                    </dl>
+
+                    <ul class="contact__socials">
+                        <li>
+                            <a href="https://www.instagram.com/ylanvsilva/" class="contact__social-link">Instagram</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/ylanvsilva/" class="contact__social-link">Linkedin</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/Ylanvsilva" class="contact__social-link">Github</a>
+                        </li>
+
+                        <li>
+                            <a href="https://wa.me/5582998279686" class="contact__social-link">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact__form">
+                    <p class="contact__form-title">Escreva uma mensagem aqui_</p>
+
+                    <form action="" id="contact-form">
+                        <div class="contact__input-div">
+                            <input name="name" type="text" placeholder="Seu Nome" class="contact__input" id="contact-name">
+                        </div>
+
+                        <div class="contact__input-div">
+                            <input name="email" type="email" placeholder="Seu Email" class="contact__input" id="contact-email">
+                        </div>
+
+                        <div class="contact__input-div">
+                            <textarea name="message" placeholder="Tipo de mensagem" class="contact__input textarea" id="message" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <p class="contact__message text-sm" id="contact-message"></p>
+
+                        <button type="submit" class="button contact__button">Enviar</button>
+                    </form>
+                    
+                    <p class="footer__copy">
+                        &copy; 2024 Ylan Vinicio. All Rights Reserved
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>
