@@ -3,12 +3,6 @@
 :root {
     --header-height: 3.5rem;
 
-    --primary-color: #4a4a4a;
-    --primary-color-alt: #575757;
-    --linear-gradient: linear-gradient(
-        54deg,
-        rgba(45, 45, 45, 0.95) 34%,
-        rgba(45, 45, 45, 0.95));
     --title-color: #4a4a4a;
     --text-color: #555;
     --text-color-alt: #999;
@@ -459,7 +453,9 @@ textarea, input {
 
 .project__categories {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 3rem;
+    row-gap: 0.25rem;
     margin-bottom: 1.875rem;
 }
 
@@ -813,6 +809,7 @@ textarea, input {
     box-shadow: 0 1px 21px rgba(0, 0, 0, 14%);
     z-index: 10;
     position: relative;
+    margin-bottom: 6.25rem;
 }
 
 .back__to-home {
@@ -873,6 +870,57 @@ figcaption {
     opacity: 1;
 }
 
+.style__switcher {
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    padding: 0.625rem;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.8);
+    background-color: var(--bg-color);
+    z-index: 101;
+    transform: translateX(100%);
+    transition: 0.3s;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.style__switcher-toggler {
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    background-color: #2d2d2d;
+    right: 100%;
+    top: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.75rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.colors {
+    display: flex;
+    column-gap: 0.625rem;
+}
+
+.colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+}
+
+.color-1 {
+    background-color: #4a4a4a;
+}
+
+.color-2 {
+    background-color: #6d56c1;
+}
+
 @media screen and (max-width: 1200px) {
     :root {
         --fs-h1: 2.75rem;
@@ -914,6 +962,11 @@ figcaption {
         justify-content: center;
         align-items: center;
         transform: translateX(-100%);
+        transition: 0.3s;
+    }
+
+    .show-menu {
+        transform: translate(0);
     }
 
     .nav__list {
@@ -1002,6 +1055,8 @@ figcaption {
         max-width: 540px;
     }
 
+    .contact__container,
+    .posts__container,
     .skills__container,
     .services__container {
         grid-template-columns: 1fr ;
@@ -1009,5 +1064,67 @@ figcaption {
 
     .skills__container {
         row-gap: 3.75rem;
+    }
+
+    .project__data {
+        padding: 2rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    .testimonial__item {
+        padding: 0 3rem;
+    }
+
+    .contact__container {
+        row-gap: 2rem;
+    }
+
+    .blog__details {
+        padding: 2.5rem 1.875rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home {
+        padding-top: 4.4rem;
+    }
+
+    .project__categories {
+        column-gap: 1.5;
+    }
+
+    .tags li {
+        margin-bottom: 0.6rem;
+    }
+
+    .testimonial__item {
+        padding: 0 1.5rem;
+    }
+
+    .swiper-button-next img,
+    .swiper-button-prev img {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    :root {
+        --fs-h1: 2rem;
+    }
+
+    .home__work {
+        font-size: var(--fs-sm);
+    }
+
+    .home__list {
+        font-size: 0.875rem;
+    }
+
+    .home__list dd {
+        padding-left: 5.75rem;
+    }
+
+    .home__social-link {
+        font-size: 1.3rem;
     }
 }

@@ -9,6 +9,10 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css">
+
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
     <title>Portfolio Website</title>
 </head>
 <body>
@@ -522,6 +526,17 @@
             </div>
         </section>
         </main>
+
+        <div class="style__switcher">
+            <div class="style__switcher-toggler">
+                <i class="ri-settings-4-fill"></i>
+            </div>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            </div>
+        </div>
+
 
         <script src="mixitup.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

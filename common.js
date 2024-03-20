@@ -1,3 +1,28 @@
+const navMenu = document.getElementById('nav-menu'),
+navToggle = document.getElementById('nav-toggle'),
+navClose = document.getElementById('nav-close');
+
+if(navToggle) {
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+
+if(navClose) {
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu');
+}
+
+navLink.forEach((n) => n.addEventListener('click' , linkAction));
+
 function scrollHeader() {
     const header = document.getElementById('header');
     
@@ -41,3 +66,28 @@ const sendEmail = (e) => {
     }
 }
 contactForm.addEventListener('submit', sendEmail);
+
+const styleSwitcherToggle = document.querySelector('.style__switcher-toggler');
+styleSwitcher = document.querySelector('.style__switcher');
+
+styleSwitcherToggle.addEventListener('click', () => {
+    styleSwitcher.classList.toggle('open');
+});
+
+window.addEventListener('scroll', () => {
+    if(styleSwitcher.classList.contains('open')) {
+        styleSwitcher.classList.remove('open');
+    }
+})
+
+const alternateStyles = document.querySelectorAll('.alternate-style');
+
+function setActiveStyle(color) {
+    alternateStyles.forEach((style) => {
+        if(color === style.getAttribute('title')) {
+            style.removeAttribute('disabled');
+        } else {
+            style.setAttribute('disabled', 'truek')
+        }
+    })
+}

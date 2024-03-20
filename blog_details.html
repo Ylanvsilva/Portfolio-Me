@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color-1.css">
+
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
     <title>Document</title>
 </head>
 <body>
@@ -40,7 +45,7 @@
                 <i class="ri-arrow-left-line"> Voltar</i>
             </a>
 
-            <h3 class="post__details-title">Como organizar meu codigo</h3>
+            <h3 class="post__details-title text-lg">Como organizar meu codigo</h3>
             <p class="post__details-date text-sm">Março, 13, 2024</p>
             <p class="post__details text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum accusantium, blanditiis harum error nemo minus accusamus ea nisi iste deserunt delectus explicabo exercitationem maiores magnam quae vel voluptatibus mollitia?</p>
             <p class="post__details text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus est tempora, dolorum autem ipsum quibusdam, ullam sequi incidunt impedit fugit corporis fuga? Assumenda dicta ab tenetur aut sunt ducimus sint.</p>
@@ -128,11 +133,20 @@
                         &copy; 2024 Ylan Vinicio. All Rights Reserved
                     </p>
                 </div>
-
-
             </div>
         </div>
     </section>
+
+    <div class="style__switcher">
+        <div class="style__switcher-toggler">
+            <i class="ri-settings-4-fill"></i>
+        </div>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="common.js"></script>
 </body>
