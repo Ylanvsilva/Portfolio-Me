@@ -547,6 +547,18 @@ textarea, input {
     font-family: var(--mono-font);
 }
 
+.project__link-background {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: .4s ease;
+}
+
+.project__link-background:hover {
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
 .testimonial__bg {
     background: url(img/bg.jpg);
     background-size: cover;
