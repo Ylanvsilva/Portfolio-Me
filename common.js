@@ -88,6 +88,6 @@ function setActiveStyle(color) {
             style.removeAttribute('disabled');
         } else {
             style.setAttribute('disabled', 'truek')
-        }
+        }   
     })
 }
