@@ -91,3 +91,15 @@ function setActiveStyle(color) {
         }   
     })
 }
+
+const imgColor = document.querySelector("#imgColor");
+const imagem = document.querySelector("#img");
+
+imgColor.addEventListener("click", function() {
+    imagem.setAttribute("src", "img/mago2.jpg")
+})
+
+const imgBlack = document.querySelector("#imgBlack");
+imgBlack.addEventListener("click", function() {
+    imagem.setAttribute("src", "img/mago.jpg")
+})

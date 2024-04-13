@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4a4a4a;
-    --primary-color-alt: #575757;
+    --primary-color: rgba(74, 74, 74, 0.7);
+    --primary-color-alt: rgba(87, 87, 87, 0.7);
     --linear-gradient: linear-gradient(
         54deg,
-        rgba(45, 45, 45, 0.95) 34%,
-        rgba(45, 45, 45, 0.95));
+        rgba(45, 45, 45, 0.7) 34%,
+        rgba(45, 45, 45, 0.7));
 }
